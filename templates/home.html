@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamboa Rental Cars</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+
+  <body>
+    <!-- Navigation bar -->
+    <header class="navbar">
+      <div class="container">
+        <a href="/" class="logo">
+          <img src="{% static 'images/logo.png' %}" alt="Gamboa Rental Cars logo" />
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+          <a href="#servicios">Servicios</a>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#contacto">Contacto</a>
+          <a href="/crm/public/reserve/">Reservar</a>
+          <a href="/crm/" class="crm-link">CRM</a>
+          <a href="/contrato/">Contrato</a>
+        </nav>
+
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Tu viaje comienza aquí</h1>
+        <p>Reserva tu vehículo ideal con Gamboa Rental Cars y descubre la libertad de conducir.</p>
+        <a href="/crm/public/reserve/" class="btn-primary">Reservar ahora</a>
+      </div>
+    </section>
+
+    <!-- Servicios section -->
+    <section id="servicios" class="services">
+      <div class="container">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-items">
+          <div class="service-item">
+            <h3>Flota Moderna</h3>
+            <p>Contamos con una amplia gama de vehículos nuevos y bien mantenidos para cada ocasión.</p>
+          </div>
+          <div class="service-item">
+            <h3>Atención Personalizada</h3>
+            <p>Nuestro equipo está disponible 24/7 para ayudarte en cada etapa de tu reserva.</p>
+          </div>
+          <div class="service-item">
+            <h3>Precios Competitivos</h3>
+            <p>Ofrecemos tarifas transparentes y sin sorpresas, adaptadas a tus necesidades.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios section -->
+    <section id="beneficios" class="benefits">
+      <div class="container">
+        <h2>¿Por qué elegirnos?</h2>
+        <ul>
+          <li>Conveniencia y facilidad en el proceso de reserva.</li>
+          <li>Opciones flexibles de alquiler a corto y largo plazo.</li>
+          <li>Soporte y asesoría para planificar tu viaje sin estrés.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contacto" class="contact">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>¿Listo para tu próxima aventura? Comunícate con nosotros y recibe la mejor atención.</p>
+
+        <p class="contact-numbers">
+          <strong>Teléfonos:</strong>
+          <a href="tel:+50762969414">62969414</a> | <a href="tel:+50764744304">64744304</a>
+        </p>
+
+        <p class="contact-numbers">
+          <strong>WhatsApp:</strong>
+          <a href="https://wa.me/50762969414" target="_blank" rel="noopener noreferrer">Escribir 62969414</a>
+          |
+          <a href="https://wa.me/50764744304" target="_blank" rel="noopener noreferrer">Escribir 64744304</a>
+        </p>
+
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-group">
+            <input type="text" name="nombre" placeholder="Nombre" required />
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Correo electrónico" required />
+          </div>
+          <div class="form-group">
+            <textarea name="mensaje" placeholder="Escribe tu mensaje" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Gamboa Rental Cars. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/50762969414?text=Hola%20quiero%20reservar%20un%20veh%C3%ADculo"
+      class="whatsapp-btn"
+      target="_blank"
+      rel="noopener noreferrer"
+    >WhatsApp</a>
+
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
